@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Power Plants</h1>
+    <ul>
+        {% for power_plant in power_plants %}
+            <li>{{ power_plant.name }} ({{ power_plant.capacity }} MW)</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
