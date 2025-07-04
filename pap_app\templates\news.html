@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>News</h1>
+    <ul>
+        {% for news in news %}
+            <li>{{ news.title }} ({{ news.date }})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+```
+
+**Frontend (React)**
